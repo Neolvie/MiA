@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using Sungero.Charts.Model;
+﻿using System.Web.Mvc;
 
 namespace MiA.Controllers
 {
@@ -20,7 +15,7 @@ namespace MiA.Controllers
 
       var model = Model.Repository.GetMockModel();
 
-      return View();
+      return View(model);
     }
 
     public ActionResult Contact()
