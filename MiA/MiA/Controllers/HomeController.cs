@@ -18,7 +18,7 @@ namespace MiA.Controllers
     {
       ViewBag.Message = "Your application description page.";
 
-      var model = new Model();
+      var model = Model.Repository.GetMockModel();
 
       return View();
     }
